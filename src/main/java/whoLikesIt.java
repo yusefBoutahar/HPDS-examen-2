@@ -5,10 +5,11 @@ public class whoLikesIt {
             return "no one likes this";
         }else{
             String res = "";
-            for (int i = 0; i < names.length ; i++) {
-                res += names[i]+" like this";
+            for (int i = 0; i < names.length-1 ; i++) {
+                res += names[i]+" and ";
             }
-            return res;
+            res += names[names.length-1];
+            return res + " like this";
         }
 
     }
