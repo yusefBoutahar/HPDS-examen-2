@@ -4,12 +4,12 @@ public class whoLikesIt {
         if(names.length == 0){
             return "no one likes this";
         }else{
+            String res = "";
             for (int i = 0; i < names.length ; i++) {
-                return names[i]+" like this";
-
+                res += names[i]+" like this";
             }
+            return res;
         }
 
-        return "";
     }
 }
