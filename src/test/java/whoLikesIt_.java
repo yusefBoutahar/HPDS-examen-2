@@ -9,4 +9,10 @@ public class whoLikesIt_ {
     public void TestsNoOneLikes() {
         assertEquals("no one likes this", whoLikesIt.whoLikesIt());
     }
+
+    @Test
+    public void TestOneLike() {
+        assertEquals("Peter like this", whoLikesIt.whoLikesIt("Peter"));
+    }
+
 }
