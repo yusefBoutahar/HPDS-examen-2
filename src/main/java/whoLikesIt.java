@@ -12,10 +12,8 @@ public class whoLikesIt {
                 //assertEquals("Alex, Jacob and 2 others like this", whoLikesIt.whoLikesIt("Alex", "Jacob", "Mark", "Max"));
 
         String res = "";
-        for (int i = 0; i < 1 ; i++) {
-            res += names[i]+", ";
-        }
-        res += names[1] +" and 2"  ;
+        res += names[0]+", "+names[1]+" and "+ (names.length-2);
+
         return res + " others like this";
 
     }
