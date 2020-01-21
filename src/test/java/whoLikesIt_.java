@@ -17,6 +17,12 @@ public class whoLikesIt_ {
 
     @Test
     public void TestTwoLikes() {
-        assertEquals("Jacob and Alex like this", whoLikesIt.whoLikesIt("Jacob", "Alex"));    }
+        assertEquals("Jacob and Alex like this", whoLikesIt.whoLikesIt("Jacob", "Alex"));
+    }
+
+    @Test
+    public void TestThreeLikes() {
+        assertEquals("Max, John and Mark like this", whoLikesIt.whoLikesIt("Max", "John", "Mark"));
+    }
 
 }
