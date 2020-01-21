@@ -28,5 +28,7 @@ public class whoLikesIt_ {
     @Test
     public void TestFourOrMoreNames() {
         assertEquals("Alex, Jacob and 2 others like this", whoLikesIt.whoLikesIt("Alex", "Jacob", "Mark", "Max"));
+        assertEquals("Alex, Jacob and 4 others like this", whoLikesIt.whoLikesIt("Alex", "Jacob", "Mark", "Max","Yusef","Martin"));
+        assertEquals("Maria, Alex and 5 others like this", whoLikesIt.whoLikesIt("Maria", "Alex", "Jacob", "Mark", "Max","Yusef","Martin"));
     }
 }
